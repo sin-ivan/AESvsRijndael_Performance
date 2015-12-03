@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.17" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.14"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,91 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5si-Gp-WSj">
+                                <rect key="frame" x="74" y="110" width="62" height="30"/>
+                                <state key="normal" title="BlowFish"/>
+                                <connections>
+                                    <action selector="startBlowFishEncryption:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zlh-Br-8De"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Encryption:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="alx-Hk-iJE">
+                                <rect key="frame" x="0.0" y="180" width="210" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Decryption:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Gf-r4-PEy">
+                                <rect key="frame" x="0.0" y="236" width="210" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Encryption:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bFu-J4-1Ab">
+                                <rect key="frame" x="390" y="180" width="210" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Decryption:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLb-dR-GD8">
+                                <rect key="frame" x="390" y="236" width="210" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hrl-Vj-bjx">
+                                <rect key="frame" x="451" y="110" width="89" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="89" id="2xj-1R-Elo"/>
+                                </constraints>
+                                <state key="normal" title="Rijndael"/>
+                                <connections>
+                                    <action selector="startRijndaelEncryption:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ade-W3-ESG"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Source" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffp-Wd-ueF">
+                                <rect key="frame" x="20" y="48" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="alx-Hk-iJE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="49c-YL-phC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hrl-Vj-bjx" secondAttribute="trailing" constant="40" id="5id-qw-sa9"/>
+                            <constraint firstItem="alx-Hk-iJE" firstAttribute="top" secondItem="5si-Gp-WSj" secondAttribute="bottom" constant="40" id="76k-So-4eH"/>
+                            <constraint firstItem="hrl-Vj-bjx" firstAttribute="baseline" secondItem="5si-Gp-WSj" secondAttribute="baseline" id="AHW-E1-BMM"/>
+                            <constraint firstItem="bFu-J4-1Ab" firstAttribute="leading" secondItem="cLb-dR-GD8" secondAttribute="leading" id="Bud-HO-M5X"/>
+                            <constraint firstItem="ffp-Wd-ueF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Jh1-qG-AFK"/>
+                            <constraint firstAttribute="trailing" secondItem="bFu-J4-1Ab" secondAttribute="trailing" id="NQe-VW-zgg"/>
+                            <constraint firstItem="ffp-Wd-ueF" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="28" id="PXC-t4-hMv"/>
+                            <constraint firstItem="9Gf-r4-PEy" firstAttribute="top" secondItem="alx-Hk-iJE" secondAttribute="bottom" constant="35" id="Qhg-2a-KaV"/>
+                            <constraint firstItem="alx-Hk-iJE" firstAttribute="trailing" secondItem="9Gf-r4-PEy" secondAttribute="trailing" id="ZwF-oh-8gL"/>
+                            <constraint firstItem="5si-Gp-WSj" firstAttribute="top" secondItem="ffp-Wd-ueF" secondAttribute="bottom" constant="41" id="clq-fH-Dj3"/>
+                            <constraint firstItem="5si-Gp-WSj" firstAttribute="centerX" secondItem="alx-Hk-iJE" secondAttribute="centerX" id="eIN-60-Rdg"/>
+                            <constraint firstItem="5si-Gp-WSj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="54" id="icO-5c-0si"/>
+                            <constraint firstItem="bFu-J4-1Ab" firstAttribute="centerX" secondItem="hrl-Vj-bjx" secondAttribute="centerX" id="kHo-Ks-pZg"/>
+                            <constraint firstItem="cLb-dR-GD8" firstAttribute="baseline" secondItem="9Gf-r4-PEy" secondAttribute="baseline" id="o9d-Xr-r40"/>
+                            <constraint firstItem="ffp-Wd-ueF" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="pZM-R9-LNW"/>
+                            <constraint firstItem="bFu-J4-1Ab" firstAttribute="baseline" secondItem="alx-Hk-iJE" secondAttribute="baseline" id="qNx-Iu-fqA"/>
+                            <constraint firstItem="alx-Hk-iJE" firstAttribute="leading" secondItem="9Gf-r4-PEy" secondAttribute="leading" id="tue-xO-KgR"/>
+                            <constraint firstItem="bFu-J4-1Ab" firstAttribute="trailing" secondItem="cLb-dR-GD8" secondAttribute="trailing" id="u12-1S-O4l"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="blowFishResultDecryptionLabel" destination="9Gf-r4-PEy" id="XdA-FR-i12"/>
+                        <outlet property="blowFishResultEncryptionLabel" destination="alx-Hk-iJE" id="SKS-U2-PYs"/>
+                        <outlet property="blowFishStartButton" destination="5si-Gp-WSj" id="bbS-HZ-dAw"/>
+                        <outlet property="rijndaelResultDecryptionLabel" destination="cLb-dR-GD8" id="0dQ-Xt-IWx"/>
+                        <outlet property="rijndaelResultEncryptionLabel" destination="bFu-J4-1Ab" id="eD6-eq-xNP"/>
+                        <outlet property="rijndaelStartButton" destination="hrl-Vj-bjx" id="dKI-br-Xxp"/>
+                        <outlet property="sourceLabel" destination="ffp-Wd-ueF" id="Fiy-rv-AJy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="245" y="325"/>
         </scene>
     </scenes>
 </document>

@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2C6BE1DD1B2AF5B10032A365"
-               BuildableName = "EncriptionTest.app"
+               BuildableName = "EncryptionTest.app"
                BlueprintName = "EncriptionTest"
                ReferencedContainer = "container:EncriptionTest.xcodeproj">
             </BuildableReference>
@@ -53,7 +53,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2C6BE1DD1B2AF5B10032A365"
-            BuildableName = "EncriptionTest.app"
+            BuildableName = "EncryptionTest.app"
             BlueprintName = "EncriptionTest"
             ReferencedContainer = "container:EncriptionTest.xcodeproj">
          </BuildableReference>
@@ -76,7 +76,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2C6BE1DD1B2AF5B10032A365"
-            BuildableName = "EncriptionTest.app"
+            BuildableName = "EncryptionTest.app"
             BlueprintName = "EncriptionTest"
             ReferencedContainer = "container:EncriptionTest.xcodeproj">
          </BuildableReference>
@@ -95,7 +95,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2C6BE1DD1B2AF5B10032A365"
-            BuildableName = "EncriptionTest.app"
+            BuildableName = "EncryptionTest.app"
             BlueprintName = "EncriptionTest"
             ReferencedContainer = "container:EncriptionTest.xcodeproj">
          </BuildableReference>

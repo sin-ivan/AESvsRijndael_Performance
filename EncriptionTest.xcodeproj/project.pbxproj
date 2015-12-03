@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C17F26E1B2B2CBB00EF7A5E /* AESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C17F2641B2B2CBB00EF7A5E /* AESCrypt.m */; };
+		2C17F26F1B2B2CBB00EF7A5E /* NSData+AES.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C17F2661B2B2CBB00EF7A5E /* NSData+AES.m */; };
+		2C17F2701B2B2CBB00EF7A5E /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C17F2681B2B2CBB00EF7A5E /* NSData+Base64.m */; };
+		2C17F2711B2B2CBB00EF7A5E /* NSData+CommonCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C17F26A1B2B2CBB00EF7A5E /* NSData+CommonCrypto.m */; };
+		2C17F2721B2B2CBB00EF7A5E /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C17F26C1B2B2CBB00EF7A5E /* NSString+Base64.m */; };
+		2C17F2731B2B2CBB00EF7A5E /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 2C17F26D1B2B2CBB00EF7A5E /* README.md */; };
+		2C17F2771B2B34E400EF7A5E /* FclBlowfish.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C17F2761B2B34E400EF7A5E /* FclBlowfish.m */; };
 		2C6BE1E31B2AF5B20032A365 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6BE1E21B2AF5B20032A365 /* main.m */; };
 		2C6BE1E61B2AF5B20032A365 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6BE1E51B2AF5B20032A365 /* AppDelegate.m */; };
 		2C6BE1E91B2AF5B20032A365 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6BE1E81B2AF5B20032A365 /* ViewController.m */; };
@@ -35,7 +42,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2C6BE1DE1B2AF5B10032A365 /* EncriptionTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EncriptionTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C17F2631B2B2CBB00EF7A5E /* AESCrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AESCrypt.h; sourceTree = "<group>"; };
+		2C17F2641B2B2CBB00EF7A5E /* AESCrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AESCrypt.m; sourceTree = "<group>"; };
+		2C17F2651B2B2CBB00EF7A5E /* NSData+AES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AES.h"; sourceTree = "<group>"; };
+		2C17F2661B2B2CBB00EF7A5E /* NSData+AES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AES.m"; sourceTree = "<group>"; };
+		2C17F2671B2B2CBB00EF7A5E /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		2C17F2681B2B2CBB00EF7A5E /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		2C17F2691B2B2CBB00EF7A5E /* NSData+CommonCrypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+CommonCrypto.h"; sourceTree = "<group>"; };
+		2C17F26A1B2B2CBB00EF7A5E /* NSData+CommonCrypto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+CommonCrypto.m"; sourceTree = "<group>"; };
+		2C17F26B1B2B2CBB00EF7A5E /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
+		2C17F26C1B2B2CBB00EF7A5E /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
+		2C17F26D1B2B2CBB00EF7A5E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		2C17F2751B2B34DE00EF7A5E /* FclBlowfish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FclBlowfish.h; sourceTree = "<group>"; };
+		2C17F2761B2B34E400EF7A5E /* FclBlowfish.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FclBlowfish.m; sourceTree = "<group>"; };
+		2C6BE1DE1B2AF5B10032A365 /* EncryptionTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EncryptionTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C6BE1E21B2AF5B20032A365 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2C6BE1E41B2AF5B20032A365 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2C6BE1E51B2AF5B20032A365 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -78,6 +98,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C17F2621B2B2CA900EF7A5E /* AES */ = {
+			isa = PBXGroup;
+			children = (
+				2C17F2631B2B2CBB00EF7A5E /* AESCrypt.h */,
+				2C17F2641B2B2CBB00EF7A5E /* AESCrypt.m */,
+				2C17F2651B2B2CBB00EF7A5E /* NSData+AES.h */,
+				2C17F2661B2B2CBB00EF7A5E /* NSData+AES.m */,
+				2C17F2671B2B2CBB00EF7A5E /* NSData+Base64.h */,
+				2C17F2681B2B2CBB00EF7A5E /* NSData+Base64.m */,
+				2C17F2691B2B2CBB00EF7A5E /* NSData+CommonCrypto.h */,
+				2C17F26A1B2B2CBB00EF7A5E /* NSData+CommonCrypto.m */,
+				2C17F26B1B2B2CBB00EF7A5E /* NSString+Base64.h */,
+				2C17F26C1B2B2CBB00EF7A5E /* NSString+Base64.m */,
+				2C17F26D1B2B2CBB00EF7A5E /* README.md */,
+			);
+			name = AES;
+			sourceTree = "<group>";
+		};
+		2C17F2741B2B34CF00EF7A5E /* BlowFish */ = {
+			isa = PBXGroup;
+			children = (
+				2C17F2751B2B34DE00EF7A5E /* FclBlowfish.h */,
+				2C17F2761B2B34E400EF7A5E /* FclBlowfish.m */,
+			);
+			name = BlowFish;
+			sourceTree = "<group>";
+		};
 		2C6BE1D51B2AF5B10032A365 = {
 			isa = PBXGroup;
 			children = (
@@ -91,7 +138,7 @@
 		2C6BE1DF1B2AF5B10032A365 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2C6BE1DE1B2AF5B10032A365 /* EncriptionTest.app */,
+				2C6BE1DE1B2AF5B10032A365 /* EncryptionTest.app */,
 				2C6BE1F71B2AF5B20032A365 /* EncriptionTestTests.xctest */,
 				2C6BE2021B2AF5B20032A365 /* EncriptionTestUITests.xctest */,
 			);
@@ -101,6 +148,8 @@
 		2C6BE1E01B2AF5B10032A365 /* EncriptionTest */ = {
 			isa = PBXGroup;
 			children = (
+				2C17F2741B2B34CF00EF7A5E /* BlowFish */,
+				2C17F2621B2B2CA900EF7A5E /* AES */,
 				2C6BE1E41B2AF5B20032A365 /* AppDelegate.h */,
 				2C6BE1E51B2AF5B20032A365 /* AppDelegate.m */,
 				2C6BE1E71B2AF5B20032A365 /* ViewController.h */,
@@ -157,7 +206,7 @@
 			);
 			name = EncriptionTest;
 			productName = EncriptionTest;
-			productReference = 2C6BE1DE1B2AF5B10032A365 /* EncriptionTest.app */;
+			productReference = 2C6BE1DE1B2AF5B10032A365 /* EncryptionTest.app */;
 			productType = "com.apple.product-type.application";
 		};
 		2C6BE1F61B2AF5B20032A365 /* EncriptionTestTests */ = {
@@ -207,6 +256,7 @@
 				TargetAttributes = {
 					2C6BE1DD1B2AF5B10032A365 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = CJZ97VZHZ7;
 					};
 					2C6BE1F61B2AF5B20032A365 = {
 						CreatedOnToolsVersion = 7.0;
@@ -270,9 +320,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C17F26F1B2B2CBB00EF7A5E /* NSData+AES.m in Sources */,
+				2C17F2771B2B34E400EF7A5E /* FclBlowfish.m in Sources */,
+				2C17F26E1B2B2CBB00EF7A5E /* AESCrypt.m in Sources */,
 				2C6BE1E91B2AF5B20032A365 /* ViewController.m in Sources */,
 				2C6BE1E61B2AF5B20032A365 /* AppDelegate.m in Sources */,
+				2C17F2721B2B2CBB00EF7A5E /* NSString+Base64.m in Sources */,
 				2C6BE1E31B2AF5B20032A365 /* main.m in Sources */,
+				2C17F2731B2B2CBB00EF7A5E /* README.md in Sources */,
+				2C17F2701B2B2CBB00EF7A5E /* NSData+Base64.m in Sources */,
+				2C17F2711B2B2CBB00EF7A5E /* NSData+CommonCrypto.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,7 +420,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -401,7 +458,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -413,10 +470,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = EncriptionTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.home.EncriptionTest;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/system",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.project;
+				PRODUCT_NAME = EncryptionTest;
 			};
 			name = Debug;
 		};
@@ -424,10 +487,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = EncriptionTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.home.EncriptionTest;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/system",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.project;
+				PRODUCT_NAME = EncryptionTest;
 			};
 			name = Release;
 		};
@@ -436,6 +505,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = EncriptionTestTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.home.EncriptionTestTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -448,6 +518,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = EncriptionTestTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.home.EncriptionTestTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -459,6 +530,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = EncriptionTestUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.home.EncriptionTestUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -471,6 +543,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = EncriptionTestUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.home.EncriptionTestUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -498,6 +571,7 @@
 				2C6BE20D1B2AF5B20032A365 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2C6BE20E1B2AF5B20032A365 /* Build configuration list for PBXNativeTarget "EncriptionTestTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +580,7 @@
 				2C6BE2101B2AF5B20032A365 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2C6BE2111B2AF5B20032A365 /* Build configuration list for PBXNativeTarget "EncriptionTestUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +589,7 @@
 				2C6BE2131B2AF5B20032A365 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
